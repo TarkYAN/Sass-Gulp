@@ -1,3 +1,7 @@
+//JSX to be built by webpack. See React Functional Component demo.
+const React = require('react');
+const {createRoot} = require('react-dom/client');
+
 const HelloUser = (props) => {
   const [username, setUsername] = React.useState(props.username);
 
@@ -11,8 +15,8 @@ const HelloUser = (props) => {
 }
 
 const init = () => {
-  ReactDOM.render( <HelloUser username='Austin' />,
-    document.getElementById('app'));
+  const root = createRoot(document.getElementById('app'));
+  root.render(<HelloUser username='Austin' />);
 };
 
 window.onload = init;
