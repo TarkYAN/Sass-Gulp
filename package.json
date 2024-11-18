@@ -9,7 +9,7 @@
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
     "test": "echo \"Tests complete\"",
-    "heroku-postbuild": "webpack",
+    "heroku-postbuild": "gulp herokuBuild",
     "buildSass": "gulp sassTask",
     "build": "gulp build",
     "watch": "gulp watch"

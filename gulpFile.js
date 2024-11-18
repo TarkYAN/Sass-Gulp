@@ -43,6 +43,7 @@ const watch = (done) => {
 
 module.exports = {
     build: gulp.parallel(sassTask, jsTask, lintTask),
+    herokuBuild: gulp.parallel(sassTask, jsTask),
     sassTask,
     jsTask,
     lintTask,
