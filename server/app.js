@@ -6,6 +6,8 @@ const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const expressHandlebars = require('express-handlebars');
 
+console.log('test');
+
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 // pull in our routes

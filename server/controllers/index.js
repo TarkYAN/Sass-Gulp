@@ -12,7 +12,7 @@ const example3 = (req, res) => {
 
 const getSongs = (req, res) => {
   return res.json([
-    { artist: 'c418', title: 'Minecraft' },
+    { artist: 'c418', title: 'Clark' },
     { artist: 'Chris Tilton', title: 'SimCity, 2019' },
   ]);
 };
